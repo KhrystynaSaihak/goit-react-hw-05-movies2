@@ -15,13 +15,13 @@ export const App = () => {
         <Route path="/goit-react-hw-05-movies" element={<SharedMenuLayout />}>
           <Route index element={<Home />} />
           <Route
-            path="goit-react-hw-05-movies/movies/:movieId"
+            path="/goit-react-hw-05-movies/movies/:movieId"
             element={<MovieDetails />}
           >
             <Route path="cast" element={<Cast />} />
             <Route path="reviews" element={<Reviews />} />
           </Route>
-          <Route path="goit-react-hw-05-movies/movies" element={<Movies />} />
+          <Route path="/goit-react-hw-05-movies/movies" element={<Movies />} />
         </Route>
       </Routes>
     </div>
